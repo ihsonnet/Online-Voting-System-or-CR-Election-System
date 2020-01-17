@@ -16,7 +16,7 @@ ID.txt
     
 Name.txt
 
-    Software read this file and compair with ID and then show the valied voter name.
+    Software read this file and compair with ID and then show the valid voter name.
 
 VoteDoneBy.txt
 
