@@ -1,5 +1,5 @@
-//Voteto.txt add
-//Voteby.txt add
+//with password verification
+//pass:mypass
 
 #include<bits/stdc++.h>
 #include<conio.h>
@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    int NumCan,i,j,NumStu,VoteFor[10],Vote,max;
+    int NumCan,isfound,i,j,NumStu,VoteFor[10],Vote,max;
     char CanName[10][1000],id[100][1000],ch;
     char pass[50];
     cout<<endl<<"                     Online Voting System / CR Election System                   "<< endl;
@@ -34,8 +34,17 @@ int main()
         cout<<"================================================================================="<<endl;
         cout<<endl;
         cout<<endl;
-        cout<<"                          Enter The Password: ";
+        cout<<"                            Enter The Password: ";
         cin>>pass;
+        while(strcmp(pass,"mypass")!=0)
+        {
+          cout<< endl;
+              cout<<endl<<"                            Wrong Password! Try Again."<<endl;
+              cout<<endl;
+              cout<<"                       Enter The Correct Password: ";
+          cin>>pass;
+          cout<<endl;
+        }
         system("CLS");
         for(i=1; i<=NumStu; i++)
             {
@@ -149,8 +158,17 @@ int main()
             cout<<endl<<"================================================================================="<<endl;
             cout<<endl;
             cout<<endl;
-            cout<<"                          Enter The Password: ";
+            cout<<"                            Enter The Password: ";
             cin>>pass;
+            while(strcmp(pass,"mypass")!=0)
+            {
+              cout<< endl;
+              cout<<endl<<"                            Wrong Password! Try Again."<<endl;
+              cout<<endl;
+              cout<<"                       Enter The Correct Password: ";
+              cin>>pass;
+              cout<<endl;
+            }
             cout<<endl;
             cout<<endl;
             cout<<endl<<"                  ==========================================="<<endl;
